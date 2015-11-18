@@ -8,7 +8,7 @@
 <ul>
 {% for item in object_list %}
     <li>
-	    <h1><a href="{% url 'foo-detail' item.slug %}">{{ item.name }}</a></h1>
+	    <h1><a href="{% url 'foo-detailview' item.slug %}">{{ item.name }}</a></h1>
     </li>
 {% empty %}
     <li>No foos yet.</li>
