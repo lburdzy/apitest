@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>Foo</h1>
+<ul>
+{% for item in object_list %}
+    <li>
+	    <h1><a href="{% url 'foo-detail' item.slug %}">{{ item.name }}</a></h1>
+    </li>
+{% empty %}
+    <li>No foos yet.</li>
+{% endfor %}
+</ul>
+</body>
+</html>
